@@ -12,11 +12,11 @@ let appleValue = 10
 
 */
 function addOneNum() {
+        let enterAppleValue = document.querySelector("#add").innerHTML
 
-    document.querySelector("#add").innerHTML = ++initialValue;
-    let multiply = document.querySelector("#add").innerHTML = +initialValue;
-    document.querySelector("p span").innerHTML = multiply * appleValue;
-    let total1 = document.querySelector("p span").innerHTML = multiply * appleValue;
+        enterAppleValue = ++initialValue;
+        let multiply = enterAppleValue = +initialValue;
+        document.querySelector("p span").innerHTML = multiply * appleValue;
 
 }
 
@@ -24,28 +24,42 @@ function addOneNum() {
 let initialValue1 = 0
 let orangeValue = 15
 
-
-
 function add1OneNum() {
+        let enterOrangeValue = document.querySelector("#add1").innerHTML
 
-    document.querySelector("#add1").innerHTML = ++initialValue1;
-    let multiply1 = document.querySelector("#add1").innerHTML = +initialValue1;
-    let total1 = multiply1 * orangeValue;
-    document.querySelector("p span").innerHTML = total1;
+        enterOrangeValue = ++initialValue1;
+        let multiply1 = enterOrangeValue = +initialValue1;
+        document.querySelector("p span").innerHTML = multiply1 * orangeValue;
 
 }
+
+
 let initialValue2 = 0
 let bananaValue = 7
 
-
 function add2OneNum() {
+        let enterBananaValue = document.querySelector("#add2").innerHTML
 
-    document.querySelector("#add2").innerHTML = ++initialValue2;
-    let multiply2 = document.querySelector("#add2").innerHTML = +initialValue2;
-    document.querySelector("p span").innerHTML = multiply2 * bananaValue;
-    let total1 = document.querySelector("p span").innerHTML = multiply2 * bananaValue;
+        enterBananaValue = ++initialValue2;
+        let multiply2 = enterBananaValue = +initialValue2;
+        document.querySelector("p span").innerHTML = multiply2 * bananaValue;
+   
 
 }
+
+/*
+
+        agr span k innerrhtml k value #mytotal-mponey 
+        k barabr ya kam hy tu kuch nhe wrna alrt dekhaoooo...
+
+*/
+
+
+
+
+
+
+
 
 
 
