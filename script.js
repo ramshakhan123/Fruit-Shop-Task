@@ -12,10 +12,9 @@ let appleValue = 10
 
 */
 function addOneNum() {
-        let enterAppleValue = document.querySelector("#add").innerHTML
 
-        enterAppleValue = ++initialValue;
-        let multiply = enterAppleValue = +initialValue;
+        document.querySelector("#add").innerHTML = ++initialValue;
+        let multiply = document.querySelector("#add").innerHTML = +initialValue;
         document.querySelector("p span").innerHTML = multiply * appleValue;
 
 }
@@ -25,23 +24,21 @@ let initialValue1 = 0
 let orangeValue = 15
 
 function add1OneNum() {
-        let enterOrangeValue = document.querySelector("#add1").innerHTML
 
-        enterOrangeValue = ++initialValue1;
-        let multiply1 = enterOrangeValue = +initialValue1;
+       document.querySelector("#add1").innerHTML = ++initialValue1;
+        let multiply1 =document.querySelector("#add1").innerHTML = +initialValue1;
         document.querySelector("p span").innerHTML = multiply1 * orangeValue;
 
 }
 
 
 let initialValue2 = 0
-let bananaValue = 7
+let bananaValue = 7 
 
 function add2OneNum() {
-        let enterBananaValue = document.querySelector("#add2").innerHTML
 
-        enterBananaValue = ++initialValue2;
-        let multiply2 = enterBananaValue = +initialValue2;
+        document.querySelector("#add2").innerHTML = ++initialValue2;
+        let multiply2 = document.querySelector("#add2").innerHTML = +initialValue2;
         document.querySelector("p span").innerHTML = multiply2 * bananaValue;
    
 
@@ -53,7 +50,6 @@ function add2OneNum() {
         k barabr ya kam hy tu kuch nhe wrna alrt dekhaoooo...
 
 */
-
 
 
 
