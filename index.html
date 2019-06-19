@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Fruitshop</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2>Fruit Shop</h2>
+        </header>
+
+        <div class="total-money">
+            <h4>I have Rs.</h4>
+            <input type="number" min="1" id="mytotal-money">
+        </div>
+
+        <div class="total-cost">
+            <p>Your total Rs.is <span></span><span id="span1"></span><span id="span2"></span></p>
+        </div>
+
+        <section>
+
+            <div class="apple">
+                <h5>Rs.10</h5>
+                <figure>
+                    <img src="apple.jpg" alt="apple-pic">
+                    <figcaption>
+                        Apple
+                    </figcaption>
+                </figure>
+                <button class="plus" onclick="addOneNum()">+</button>
+                <button id="add">0</button>
+                <button class="minus" onclick="minusOneNum()">-</button>
+            </div>
+            <div class="orange">
+                <h5>Rs. 15</h5>
+                <figure>
+
+                    <img src="orange.jpg" alt="orange-pic">
+                    <figcaption>
+                        orange
+                    </figcaption>
+                </figure>
+                <button class="plus" onclick="add1OneNum()">+</button>
+                <button id="add1">0</button>
+                <button class="minus">-</button>
+            </div>
+            <div class="banana">
+                <h5>Rs.7</h5>
+
+                <figure>
+
+                    <img src="banana.jpg" alt="banana-pic">
+                    <figcaption>
+                        Banana
+                    </figcaption>
+                </figure>
+                <button class="plus" onclick="add2OneNum()">+</button>
+                <button id="add2">0</button>
+                <button class="minus">-</button>
+            </div>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

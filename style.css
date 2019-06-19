@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+
+header, .Total-money {
+    height: 82px;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-image: linear-gradient(black, grey, black);
+    color: white;
+}
+
+.total-money {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.total-money h4 {
+    display: inline-block;
+}
+
+.total-money input {
+    border-radius: 58px;
+    width: 64px;
+    height: 33px;
+    border-color: #8080801c;
+    margin: 10px 10px;
+}
+
+.total-cost {
+    height: 220px;
+    background-color: #efe2cc;
+}
+
+section  img {
+    width: 100px;
+}
+
+section h5 {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background-color: green;
+    color: white;
+}
+
+
+.apple button, .orange button, .banana button {
+    padding: 7px 14px;
+    margin: 0px -4px;
+    border-color: transparent;
+    background-color: #565d5c;
+    color: white;
+    
+}
+.minus {
+    border-radius: 0px 16px 16px 0px;
+}
+
+
+.plus {
+    border-radius: 16px 0px 0px 16px;
+}
+
+#add, #add1, #add2 {
+    width: 60px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-color: #8080801c;
+    padding: 9px 0px 10px 0px;
+    background-color: white;
+    color: black;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section div {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    margin: 16px 5px;
+    border: none;
+}
+
+.apple h5 {
+    margin-bottom: 0;
+}
+
+
+.apple figure {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+section {
+  background-image: linear-gradient(#3c4144, #596171, #3c4144);
+}
+
+p {
+    padding: 87px 0px;
+    text-align: center;
+    font-size: 2;
+    font-size: 22px;
+}
+
+p span  {
+    font-size: 44px;
+    color: red;
+    padding-left: 5px;
+}
