@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" minimum-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Fruitshop</title>
@@ -21,12 +21,10 @@
         </div>
 
         <div class="total-cost">
-            <p class="price" id="bill">0</p>
-            <!-- <p >Your total Rs.is <span></span><span id="span1"></span><span id="span2"></span></p> -->
+            <p>Your total Rs.is <span></span></span></p> -->
         </div>
 
         <section>
-
             <div class="apple">
                 <h5>Rs.10</h5>
                 <figure>
@@ -35,36 +33,37 @@
                         Apple
                     </figcaption>
                 </figure>
-                <button class="plus" onclick="add()">+</button>
-                <button id="add">0</button>
-                <button class="minus" onclick="minusOneNum()">-</button>
+                <button class="plus" onclick="addApple()"> + </button>
+                <button id="addapple-amount">0</button>
+                <button class="minus" onclick="minusApple()"> - </button>
             </div>
+
+
             <div class="orange">
                 <h5>Rs. 15</h5>
                 <figure>
-
                     <img src="orange.jpg" alt="orange-pic">
                     <figcaption>
                         orange
                     </figcaption>
                 </figure>
-                <button class="plus" onclick="addOrange()">+</button>
-                <button id="add1">0</button>
-                <button class="minus">-</button>
+                <button class="plus" onclick="addOrange()"> + </button>
+                <button id="addorange-amount">0</button>
+                <button class="minus" onclick="minusOrange()"> - </button>
             </div>
+
+
             <div class="banana">
                 <h5>Rs.7</h5>
-
                 <figure>
-
                     <img src="banana.jpg" alt="banana-pic">
                     <figcaption>
                         Banana
                     </figcaption>
                 </figure>
-                <button class="plus" onclick="add2OneNum()">+</button>
-                <button id="add2">0</button>
-                <button class="minus">-</button>
+                <button class="plus" onclick="addBanana()"> + </button>
+                <button id="addbanana-amount">0</button>
+                <button class="minus" onclick="minusBanana"> - </button>
             </div>
 
         </section>

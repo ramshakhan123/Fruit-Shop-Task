@@ -1,67 +1,68 @@
-let count=0;
-let applePrice=10;
-let totalBill=0;
-let userPayment=0;
-let AppleQuantity=0;
-let OrangeQuantity=0;
-let BananaQuantity=0;
-function add(){
- userPayment=Number(document.getElementById('mytotal-money').value);
- totalBill=Number(document.getElementById('bill').innerHTML);
- if(userPayment <= totalBill ){
-         alert('you have low balence')
- }
- else {
-     // let add = document.querySelector('#add').innerHTML;
-     document.querySelector("#add").innerHTML=AppleQuantity;
-     AppleQuantity++;
-     document.querySelector("#add").innerHTML=AppleQuantity;
-     document.getElementById('bill').innerHTML=(AppleQuantity*10 )+(OrangeQuantity*15);
+let applePrice = 10;
+let totalBill = 0;
+let userPayment = 0;
+let AppleQuantity = 0;
+let OrangeQuantity = 0;
+let BananaQuantity = 0;
+function addApple() {
+        userPayment = Number(document.querySelector('#mytotal-money').value);
+        totalBill = Number(document.querySelector('p span').innerHTML);
 
-    
-  
- }
-   
+        if (userPayment <= totalBill) {
+                alert('You donot have enough money')
+        }
+        else {
+                document.querySelector("#addapple-amount").innerHTML = AppleQuantity;
+                AppleQuantity++;
+                document.querySelector("#addapple-amount").innerHTML = AppleQuantity;
+                document.querySelector('p span').innerHTML = (AppleQuantity * 10) + (OrangeQuantity * 15);
+
+        }
+
 }
 
-function addOrange(){
-        userPayment=Number(document.getElementById('mytotal-money').value);
-        totalBill=Number(document.getElementById('bill').innerHTML);
-        if(userPayment <= totalBill ){
-                alert('you have low balence')
+function addOrange() {
+        userPayment = Number(document.querySelector('#mytotal-money').value);
+        totalBill = Number(document.querySelector('p span').innerHTML);
+        if (userPayment <= totalBill) {
+                alert('You donot have enough money')
         }
         else {
-            // let add = document.querySelector('#add1').innerHTML;
-            document.querySelector("#add1").innerHTML=OrangeQuantity;
-            OrangeQuantity++;
-            document.querySelector("#add1").innerHTML=OrangeQuantity;
-            document.getElementById('bill').innerHTML=(AppleQuantity*10 )+(OrangeQuantity*15);
-       
-           
-         
+                document.querySelector("#addorange-amount").innerHTML = OrangeQuantity;
+                OrangeQuantity++;
+                document.querySelector("#addorange-amount").innerHTML = OrangeQuantity;
+                document.querySelector('p span').innerHTML = (AppleQuantity * 10) + (OrangeQuantity * 15) + (BananaQuantity * 7);
+
         }
-          
-       }
+
+}
 
 
-       function add2OneNum(){
-        userPayment=Number(document.getElementById('mytotal-money').value);
-        totalBill=Number(document.getElementById('bill').innerHTML);
-        if(userPayment <= totalBill ){
-                alert('you have low balence')
+function addBanana() {
+        userPayment = Number(document.querySelector('#mytotal-money').value);
+        totalBill = Number(document.querySelector('p span').innerHTML);
+        if (userPayment <= totalBill) {
+                alert('You donot have enough money')
         }
         else {
-            // let add = document.querySelector('#add1').innerHTML;
-            document.querySelector("#add2").innerHTML=BananaQuantity;
-            BananaQuantity++;
-            document.querySelector("#add2").innerHTML=BananaQuantity;
-            document.getElementById('bill').innerHTML=(AppleQuantity*10 )+(OrangeQuantity*15)+(BananaQuantity*7);
-       
-           
-         
+                document.querySelector("#addbanana-amount").innerHTML = BananaQuantity;
+                BananaQuantity++;
+                document.querySelector("#addbanana-amount").innerHTML = BananaQuantity;
+                document.querySelector('p span').innerHTML = (AppleQuantity * 10) + (OrangeQuantity * 15) + (BananaQuantity * 7);
+
         }
-          
-       }
+
+}
+
+function minusApple() {
+        document.querySelector("#addapple-amount").innerHTML = AppleQuantity;
+        AppleQuantity--;
+        document.querySelector("#addapple-amount").innerHTML = AppleQuantity;
+        document.querySelector('p span').innerHTML = (AppleQuantity * 10) - (OrangeQuantity * 15);
+
+}
+
+      
 
 
 
@@ -116,10 +117,13 @@ function addOrange(){
 
 
 
-   
-   
-    
-    
+
+
+
+
+
+
+
 
 
 

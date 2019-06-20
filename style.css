@@ -71,7 +71,7 @@ section h5 {
     border-radius: 16px 0px 0px 16px;
 }
 
-#add, #add1, #add2 {
+#addapple-amount, #addorange-amount, #addbanana-amount {
     width: 60px;
     border-left-color: transparent;
     border-right-color: transparent;
@@ -123,4 +123,10 @@ p span  {
     font-size: 44px;
     color: red;
     padding-left: 5px;
+}
+
+@media (min-width:360px ) {
+    section {
+        flex-wrap: wrap;
+    }
 }
