@@ -1,55 +1,67 @@
-let initialValue = 0
-let appleValue = 10
+let count=0;
+let applePrice=10;
+let totalBill=0;
+let userPayment=0;
+let AppleQuantity=0;
+let OrangeQuantity=0;
+let BananaQuantity=0;
+function add(){
+ userPayment=Number(document.getElementById('mytotal-money').value);
+ totalBill=Number(document.getElementById('bill').innerHTML);
+ if(userPayment <= totalBill ){
+         alert('you have low balence')
+ }
+ else {
+     // let add = document.querySelector('#add').innerHTML;
+     document.querySelector("#add").innerHTML=AppleQuantity;
+     AppleQuantity++;
+     document.querySelector("#add").innerHTML=AppleQuantity;
+     document.getElementById('bill').innerHTML=(AppleQuantity*10 )+(OrangeQuantity*15);
 
-/*
-
-    1- jb addOneNum() button ku click krun tu
-    input m +1 value add hute rha jb jb m click krun...
     
-    2- phr input k value multiply hoge appleValue = 10 se tu
-    woh dono value multiply hukr p span m show hunge...
+  
+ }
+   
+}
+
+function addOrange(){
+        userPayment=Number(document.getElementById('mytotal-money').value);
+        totalBill=Number(document.getElementById('bill').innerHTML);
+        if(userPayment <= totalBill ){
+                alert('you have low balence')
+        }
+        else {
+            // let add = document.querySelector('#add1').innerHTML;
+            document.querySelector("#add1").innerHTML=OrangeQuantity;
+            OrangeQuantity++;
+            document.querySelector("#add1").innerHTML=OrangeQuantity;
+            document.getElementById('bill').innerHTML=(AppleQuantity*10 )+(OrangeQuantity*15);
+       
+           
          
-
-*/
-function addOneNum() {
-
-        document.querySelector("#add").innerHTML = ++initialValue;
-        let multiply = document.querySelector("#add").innerHTML = +initialValue;
-        document.querySelector("p span").innerHTML = multiply * appleValue;
-
-}
+        }
+          
+       }
 
 
-let initialValue1 = 0
-let orangeValue = 15
-
-function add1OneNum() {
-
-       document.querySelector("#add1").innerHTML = ++initialValue1;
-        let multiply1 =document.querySelector("#add1").innerHTML = +initialValue1;
-        document.querySelector("p span").innerHTML = multiply1 * orangeValue;
-
-}
-
-
-let initialValue2 = 0
-let bananaValue = 7 
-
-function add2OneNum() {
-
-        document.querySelector("#add2").innerHTML = ++initialValue2;
-        let multiply2 = document.querySelector("#add2").innerHTML = +initialValue2;
-        document.querySelector("p span").innerHTML = multiply2 * bananaValue;
-   
-
-}
-
-/*
-
-        agr span k innerrhtml k value #mytotal-mponey 
-        k barabr ya kam hy tu kuch nhe wrna alrt dekhaoooo...
-
-*/
+       function add2OneNum(){
+        userPayment=Number(document.getElementById('mytotal-money').value);
+        totalBill=Number(document.getElementById('bill').innerHTML);
+        if(userPayment <= totalBill ){
+                alert('you have low balence')
+        }
+        else {
+            // let add = document.querySelector('#add1').innerHTML;
+            document.querySelector("#add2").innerHTML=BananaQuantity;
+            BananaQuantity++;
+            document.querySelector("#add2").innerHTML=BananaQuantity;
+            document.getElementById('bill').innerHTML=(AppleQuantity*10 )+(OrangeQuantity*15)+(BananaQuantity*7);
+       
+           
+         
+        }
+          
+       }
 
 
 
@@ -71,13 +83,38 @@ function add2OneNum() {
 
 
 
-/*
- 
-    jb minusOneNum() button ku click krun tu
-    input m -1 value minus hute rha jb jb m click krun...    
 
-*/
-function minusOneNum() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    
    
@@ -85,7 +122,7 @@ function minusOneNum() {
     
 
 
-}
+
 
 
 
